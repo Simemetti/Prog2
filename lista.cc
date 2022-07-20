@@ -3,8 +3,6 @@
 
 using namespace std ;
 
-
-#include "tipo.h"
 #include "lista.h"
 
 /*******************************/
@@ -45,8 +43,8 @@ lista insert_elem(lista l, elem* e){
 lista delete_elem(lista l, elem* e){
 
 		if(l==e)
-			l=e->pun; // e è la testa della lista
-		else // e non è la testa della lista
+			l=e->pun; // e ï¿½ la testa della lista
+		else // e non ï¿½ la testa della lista
 			(e->prev)->pun = e->pun;
 		if(e->pun!=NULL)
 			(e->pun)->prev=e->prev;

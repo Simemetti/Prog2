@@ -1,8 +1,9 @@
 /*******************************/
 /* HEADER MODULO "liste" */
 /*******************************/
-#ifndef LISTE
-#define LISTE
+
+#include "tipo.h"
+
 struct elem
 {
        tipo_inf inf;
@@ -20,5 +21,3 @@ lista delete_elem(lista, elem*);
 tipo_inf head(lista);
 elem* new_elem(tipo_inf);
 elem* search(lista, tipo_inf);
-
-#endif
